@@ -1,0 +1,142 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html style="font-size: 10px">
+    <head>
+        <title> My Tribute Page</title>
+
+        <style>
+        body {
+            color: rgb(17, 15, 15);
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align:center;
+            line-height: 20px;    /* distance between each line of text */
+            margin:0; 
+            background-color: rgb(49, 129, 59); 
+
+        }
+        
+        #main {
+            background-color: #806b80ea; 
+            margin: 20px 0px 10px 0px ;  /*the main is 20px and 00px away from the top side and right side of the body respectively */
+            padding: 20px 10px 20px 10px;    /*the top of the picture of mandela is 40px away from the top side of the main ? */
+            border-radius: 5px;  
+        }
+    
+
+        @media(max-width: 450px){
+            #main{
+                margin: 0;          /* for smaller screen devices like phones*/
+            }
+        }
+        
+
+        a {
+            color:rgb(7, 7, 8);
+        }
+        
+        a:visited {
+            color: rgb(238, 56, 93);
+        }
+        #title{
+            font-family: Arial;
+            color: black;
+            font-size: 50PX;
+
+        }
+
+        #img-div{
+            background-color:white;
+            padding: 10px;
+            margin: 0;
+            border-radius: 3%;
+        }
+
+        #image{
+            width: auto; /*automatically adjusts width to display contents correctly*/
+            display: block;     /*tolerates no html element next to it..they have to be above or below..OTHERS: inline, none, inline-block, flex*/
+            height: auto;       /*automatically adjusts height to display contents correctly*/
+            margin: 0px auto 20px auto;
+
+
+        }
+
+        #img-caption{
+            margin: 15px 0px 15px 0;
+        }
+
+        #headline{
+            margin: 30px 0;
+            text-align: center;
+            
+        } 
+
+        #tribute-info{
+            max-width: 600px;
+            text-align: left;
+            margin:50px auto auto auto;
+        }
+        #blockquote {
+            max-width: 600px;
+            text-align: left;
+            margin: 10px auto auto 20px;
+        }
+
+        #tribute-link{
+            max-width: 500px;
+            margin: 20px auto 10 auto ;
+            color: rgb(0, 0, 0);
+            text-align: center;
+
+        }
+        </style>
+
+    </head>
+    <body>
+
+        <main id="main">
+            <h2 id="title"><strong>Nelson Mandela </strong></h2>
+            <p> A man guided with hope. Not fear.</p>
+            
+
+            <div id="img-div">
+                <img id="image" src="https://www.2oceansvibe.com/wp-content/uploads/2016/07/what-did-nelson-mandela-fight-for_4e148e13-f2dc-4fca-b2c4-92cecb6577aa-1.jpg"
+                alt="A victorious Madiba">
+                <figcaption id="img-caption">He Lives Forever.</figcaption>
+            </div>
+            <section id="tribute-info"> 
+                <h3 id="headline">Below is a list of some of his accomplishments:</h3>
+                <ul>
+                    <li><strong>1950-</strong> He became the National President of the ANC youth league</li>
+                    <li><strong>1948-</strong> He was a lead opponent of the 1948 Aparthield legislation</li>
+                    <li><strong>1953-</strong> He co-founded the first black legal partnership in South-Africa</li>
+                    <li><strong>1961-</strong> His speech during Rivonia trial is considered one of the great speeches of the 20th century</li>
+                    <li><strong>1985-</strong> NELSON MANDELA PLAYED THE LEADING ROLE IN ENDING APARTHEID</li>
+                    <li><strong>1994-</strong> NELSON MANDELA WAS THE FIRST BLACK PRESIDENT OF SOUTH AFRICA</li>
+                    <li><strong>-</strong> HE FOCUSED ON NATIONAL RECONCILIATION DURING HIS PRESIDENCY</li>
+
+                </ul>
+            
+                <blockquote id="blockquote" cite="https://www.forbes.com/sites/mfonobongnsehe/2013/12/06/20-inspirational-quotes-from-nelson-mandela/#5ac5c6d71017">
+                <p>Difficulties break some men but make others. No axe is sharp 
+                    enough to cut the soul of a sinner who keeps on trying, 
+                    one armed with the hope that he will rise even in the end.</p>
+                <cite>---Nelson Mandela.</cite>
+                </blockquote>
+               <p >Click  <a target='_blank' id="tribute-link" href="https://medium.com/@riadkaced/a-tribute-to-nelson-mandela-a-man-guided-with-hope-not-fear-adb9c40645e4">
+                 here </a>to read more about Nelson Mandela.</p>
+            </section>
+        
+        </main>
+    </body>
+</html>
